@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Modern box model */
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.head_title {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    color: #4B4B4B;
+}
+
+nav .phone {
+    display: flex;
+    width: 72px;
+    height: auto;
+    padding: 20px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+}
+
+.header-top {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.hero_p {
+    font-size: 18px;
+    color: white;
+}
+
+.hero_section {
+    display: flex;
+    background-image: url(elegant.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: none;
+}
+
+.section2 {
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.firstline {
+    padding: 24px;
+}
+
+.preventivo {
+    margin-top: 24px;
+    background-color: #1f94d2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+.line2 {
+    margin: 24px;
+}
+
+.scelta {
+    position: relative;
+    display: inline-block;
+}
+
+.scelta img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.scelta h2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.firsticon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.firsticon img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #1f94d2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 4px solid #1f94d2;
+}
+
+.motivo1 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #1f94d2;
+    padding-bottom: 12px;
+}
+
+.secondicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.secondicon img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #1f94d2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 4px solid #1f94d2;
+}
+
+.motivo2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #1f94d2;
+    padding-bottom: 12px;
+}
+
+.thirdicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.thirdicon img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #1f94d2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 4px solid #1f94d2;
+}
+
+.motivo3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #1f94d2;
+    padding-bottom: 12px;
+}
+
+.forthicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.forthicon img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #1f94d2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 4px solid #1f94d2;
+}
+
+.motivo4 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #1f94d2;
+    padding-bottom: 12px;
+}
+
+.fifthicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.fifthicon img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #1f94d2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 4px solid #1f94d2;
+}
+
+.motivo5 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #1f94d2;
+    padding-bottom: 12px;
+}
+
+.line3 {
+    margin: 24px;
+}
+
+.servizi {
+    text-align: center;
+    color: #86868b;
+    padding-bottom: 24px;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    /* Hide anything outside the container */
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    /* Adjust based on the number of slides */
+    transition: transform 1s ease;
+}
+
+.slide {
+    width: 100vw;
+    /* Each slide takes the full viewport width */
+    flex-shrink: 0;
+    position: relative;
+    /* Needed for text overlay */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 2em;
+    /* Adjust as needed */
+}
+
+.copyright {
+    color: #86868b;
+    text-align: center;
+    padding: 24px;
+}
+
+.phone:hover {
+    width: 84px;
+    transform: scale(0.9);
+    /* Slightly increase size on hover */
+    filter: brightness(1.2);
+    /* Increase brightness on hover */
+}
+
+@media (min-width: 769px) {
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero_p {
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .head_title {
+        font-size: 24px;
+    }
+
+    nav .logo {
+        width: 400px;
+        height: auto;
+        padding-left: 1.5em;
+        padding-right: 10em;
+    }
+
+    nav .phone {
+        width: 84px;
+        height: 84px;
+    }
+
+    .line {
+        display: flex;
+    }
+}
+
+.header-top {
+    align-items: center;
+}
+
+@media (min-width: 1367px) {
+    h1 {
+        display: flexbox;
+        font-size: 54px;
+        text-align: center;
+        padding: auto;
+    }
+
+    .hero_p {
+        font-size: 24px;
+        padding: auto;
+    }
+}
