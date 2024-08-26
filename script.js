@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     setInterval(showNextSlide, 4000); // Change slide every 3 seconds
 });
+
+window.addEventListener('scroll', function () {
+    var header = document.getElementById('floating-header');
+    var scrollPosition = window.scrollY;
+
+    // Adjust the top position of the header
+    header.style.top = scrollPosition + 'px';
+});
