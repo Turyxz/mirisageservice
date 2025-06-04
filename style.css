@@ -6,6 +6,7 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    z-index: 10000;
 }
 
 * {
@@ -25,6 +26,7 @@ html {
     color: #4B4B4B;
     animation: fadeIn 1s ease-in-out;
     padding-left: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .head_title:hover {
@@ -38,6 +40,10 @@ nav .phone {
     height: auto;
     padding: 20px;
     transition: width 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+    background: none;
+    border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
 }
 
 nav .logo {
@@ -46,6 +52,7 @@ nav .logo {
     width: 30%;
     height: auto;
     animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -70,16 +77,21 @@ h1 {
     padding-bottom: 16px;
     text-align: center;
     transition: font-size 0.3s ease, text-align 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .hero_p {
     font-size: 18px;
     color: white;
+    transition: font-size 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .hero_section {
     display: flex;
-    background-image: url(elegant.jpg);
+    background-image: url(elegant.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -87,6 +99,20 @@ h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.hero_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
 }
 
 .line {
@@ -355,7 +381,7 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 
@@ -438,19 +464,6 @@ h1 {
     }
 }
 
-.hero_section {
-    display: flex;
-    background-image: url(elegant.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn 1s ease-in-out;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -475,51 +488,7 @@ nav .phone {
     filter: brightness(1.2);
 }
 
-h1 {
-    font-size: 24px;
-    color: white;
-    padding-bottom: 16px;
-    text-align: center;
-    transition: font-size 0.3s ease, text-align 0.3s ease;
-}
-
-.hero_p {
-    font-size: 18px;
-    color: white;
-    transition: font-size 0.3s ease;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.text-overlay:hover {
-    opacity: 1;
-}
-
-.text-overlay:hover h2 {
-    font-size: 2.5em;
-}
-
-.text-overlay:hover p {
-    font-size: 1.2em;
-}
-
-.text-overlay p {
-    font-size: 1em;
-}
-
-.copyright {
+copyright {
     text-align: center;
     padding: 12px;
     color: #86868b;

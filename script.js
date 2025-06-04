@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (currentIndex >= totalSlides) {
             currentIndex = 0; // Loop back to the first slide
         }
+        const slider = document.querySelector('.slider');
+        // Add smooth transition before setting transform
+        slider.style.transition = 'transform 0.6s ease-in-out';
         const newTransform = `translateX(-${currentIndex * 100}vw)`;
-        document.querySelector('.slider').style.transform = newTransform;
+        slider.style.transform = newTransform;
     }
 
     setInterval(showNextSlide, 4000); // Change slide every 3 seconds

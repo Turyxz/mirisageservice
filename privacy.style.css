@@ -7,13 +7,19 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
 }
 
 .head_title {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 34px;
-    color: black;
+    padding-left: 10px;
+    color: #1f6fd2;
     animation: fadeIn 1s ease-in-out;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -25,18 +31,21 @@ html {
 
 nav .phone {
     display: flex;
-    width: 72px;
-    height: auto;
-    margin-top: 12px;
-    padding: 20px;
-    transition: width 0.3s ease, transform 0.3s ease, filter 0.3s ease;
-    /* Add transition properties */
+    width: 36px;
+    height: 36px;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 nav .logo {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 90px;
     height: auto;
     animation: fadeIn 1s ease-in-out;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -48,16 +57,49 @@ nav .logo:hover {
 }
 
 .header-top {
-    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left, .header-center, .header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+}
+
+.header-right {
+    justify-content: flex-end;
 }
 
 .header-top .logo {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 120px;
     height: auto;
+}
+
+.header-top .phone {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .privacy {
@@ -66,31 +108,40 @@ nav .logo:hover {
     width: 100%;
     height: auto;
     padding: 20px;
+    color: #1f6fd2;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .contenuto {
-    width: 100%;
-    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
     text-align: left;
-    display: block;
+    background: linear-gradient(to bottom right, #f5faff, #ebf3fb);
+    border-radius: 16px;
+    border: 1px solid #d0e6f9;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+    backdrop-filter: blur(6px);
+    color: #1a1a1a;
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-left: 4px solid #1f6fd2;
+    animation: slideFade 0.8s ease forwards;
 }
 
 .contenuto a {
-    all: unset;
-    text-decoration: none;
-    color: blue;
-    font-weight: normal;
-    font-size: inherit;
-    font-style: inherit;
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
+    color: #1f6fd2;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .contenuto a:hover {
-    text-decoration: underline;
+    color: #144c9c;
 }
 
 nav .phone:hover {
@@ -108,26 +159,9 @@ nav .phone:hover {
     }
 }
 
-.contenuto {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    display: block;
-    animation: fadeIn 1s ease-in-out;
-    background-color: #F5F5F5;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    color: #333333;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: bold;
-    border: 1px solid #CCCCCC;
-    transition: background-color 0.3s ease;
-}
-
 .contenuto:hover {
-    background-color: #EDEDED;
+    background: linear-gradient(to bottom right, #e3f1fb, #d6ebf9);
+    transform: scale(1.005);
 }
 
 a {
@@ -135,4 +169,15 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
